@@ -1,37 +1,169 @@
-// Products Database
+// Products Database (15 Products with prices matching the sheet)
 const products = [
   {
     id: 1,
-    name: "Radiance Jelly Cleanser",
-    subtitle: "Purify & Refine",
-    price: 120.00,
-    image: "assets/product_cleanser.png",
-    tag: "Step 01",
-    desc: "Gentle amino-acid gel infused with diamond dust and local Moringa extract that lightly polishes dullness while conserving skin lipids. Respects the skin microbiome.",
-    ingredients: "Water, Sodium Cocoyl Glycinate, Glycerin, Diamond Powder, Moringa Oleifera Leaf Extract, Aloe Barbadensis Leaf Extract, Allantoin, Citric Acid, Phenoxyethanol.",
-    usage: "Apply a small amount to damp skin. Massage in circular motions for 60 seconds, paying attention to areas of texture. Rinse thoroughly with lukewarm water."
+    name: "Face Soap",
+    subtitle: "Cleanse & Clarify",
+    price: 90.00,
+    category: "face",
+    packageType: "soap",
+    desc: "A gentle daily facial bar formulated with Unique Diamond Dust and botanical active ingredients to brighten and clarify the complexion.",
+    ingredients: "Water, Sodium Palmate, Glycerin, Unique Diamond Powder, Coconut Oil, Aloe Barbadensis Extract, Fragrance, Vitamin E.",
+    usage: "Lather soap in hands, massage gently onto damp face for 30-60 seconds. Rinse thoroughly with lukewarm water. Use morning and night."
   },
   {
     id: 2,
-    name: "Diamond Peptide Serum",
-    subtitle: "Stimulate & Brighten",
-    price: 280.00,
-    image: "assets/product_serum.png",
-    tag: "Step 02",
-    desc: "Our gold-standard elixir. Conjugated peptide chains suspended in high-grade Shea-derived ceramides and hyaluronic acid for instant cellular replenishment. Sourced and processed locally in Ghana.",
-    ingredients: "Hyaluronic Acid (Multi-Weight), Acetyl Sh-Pentapeptide-35 (Diamond Peptide Complex), Butyrospermum Parkii (Shea) Butter Extract, Niacinamide (5%), Panthenol, Centella Asiatica.",
-    usage: "Press 3-4 drops gently into clean, damp face and neck morning and night. Allow to fully absorb for 60 seconds before applying moisturizer."
+    name: "Face Cream",
+    subtitle: "Hydrate & Illuminate",
+    price: 180.00,
+    category: "face",
+    packageType: "jar",
+    desc: "A velvety, fast-absorbing facial cream that delivers deep moisture, reinforces skin barrier lipids, and leaves a premium satin gold sheen.",
+    ingredients: "Raw Northern Shea Butter, Squalane, Unique Diamond Powder, Ceramide NP, Camellia Sinensis Leaf Extract, Niacinamide.",
+    usage: "Apply a pea-sized amount onto cleansed face and neck in upward sweeping motions. Best used after serums."
   },
   {
     id: 3,
-    name: "Hydro-Glow Moisturizer",
-    subtitle: "Lock & Illuminate",
-    price: 180.00,
-    image: "assets/product_moisturizer.png",
-    tag: "Step 03",
-    desc: "A luxurious velvet cream made with raw Northern Ghanaian Shea Butter and Cocoa Husk extract that seals in peptides and reinforces the skin barrier.",
-    ingredients: "Butyrospermum Parkii (Shea Butter), Squalane, Ceramide NP, Ceramide AP, Diamond Powder, Theobroma Cacao (Cocoa) Husk Extract, Tocopherol (Vitamin E), Phytosphingosine.",
-    usage: "Warm a pea-sized amount between fingertips. Press into skin in upward sweeping motions. Use morning and night as the final step of your ritual."
+    name: "Face Cleanser",
+    subtitle: "Purify & Refresh",
+    price: 165.00,
+    category: "face",
+    packageType: "pump",
+    desc: "An organic gel cleanser that sweeps away dirt, oil, and micro-impurities while respecting the natural moisture barrier.",
+    ingredients: "Water, Sodium Lauroyl Methyl Isethionate, Glycerin, Unique Diamond Dust, Moringa Leaf Extract, Citric Acid, Allantoin.",
+    usage: "Pump 1-2 times into wet palms, lather and massage onto face. Rinse and pat dry. Use daily morning and night."
+  },
+  {
+    id: 4,
+    name: "Face Scrub",
+    subtitle: "Polish & Renew",
+    price: 150.00,
+    category: "face",
+    packageType: "jar",
+    desc: "A refining exfoliating scrub with micro-polishing grains to gently remove dry cells and expose luminous skin texture.",
+    ingredients: "Water, Fine Walnut Shell Powder, Unique Diamond Powder, Jojoba Esters, Glycerin, Chamomile Extract.",
+    usage: "Gently massage a small amount onto damp skin in circular motions. Avoid eye area. Rinse off. Use 2-3 times per week."
+  },
+  {
+    id: 5,
+    name: "Face Serum",
+    subtitle: "Rejuvenate & Brighten",
+    price: 200.00,
+    category: "face",
+    packageType: "bottle",
+    desc: "Our high-potency anti-aging serum, featuring high-concentration Unique Diamond Peptide Complex to restore skin bounce and cellular radiance.",
+    ingredients: "Hyaluronic Acid, Acetyl Sh-Pentapeptide-35 (Unique Diamond Peptide), Niacinamide (5%), Panthenol, Glycyrrhiza Glabra Root Extract.",
+    usage: "Press 3-4 drops gently into clean, damp face and neck. Let absorb for 60 seconds before moisturizing."
+  },
+  {
+    id: 6,
+    name: "Whitening Body Lotion",
+    subtitle: "Even Tone & Deep Moisture",
+    price: 250.00,
+    category: "body",
+    packageType: "pump",
+    desc: "A powerful skin-evening body milk formulated to fade hyperpigmentation, smooth rough patches, and hydrate the skin.",
+    ingredients: "Water, Northern Shea Butter, Alpha Arbutin, Unique Diamond Powder, Licorice Extract, Vitamin E, Fragrance.",
+    usage: "Smooth generously all over the body daily, especially after bathing or showering. Focus on dry areas."
+  },
+  {
+    id: 7,
+    name: "Whitening Shower Gel",
+    subtitle: "Cleanse & Glow",
+    price: 230.00,
+    category: "body",
+    packageType: "pump",
+    desc: "A luxurious lathering wash that clarifies, conditions, and releases a gorgeous, subtle scent, leaving skin silky and illuminated.",
+    ingredients: "Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Kojic Acid, Unique Diamond Dust, Moringa Oil, Glycol Distearate.",
+    usage: "Apply to wet body using a loofah or washcloth, work into a rich lather, and massage. Rinse thoroughly."
+  },
+  {
+    id: 8,
+    name: "Super Whitening Body Soap",
+    subtitle: "Maximum Tone Clarification",
+    price: 350.00,
+    category: "body",
+    packageType: "soap",
+    desc: "A maximum strength soap bar engineered to actively clear stubborn spots, correct hyperpigmentation, and unify body complexion.",
+    ingredients: "Water, Sodium Cocoate, Kojic Acid Dipalmitate, Unique Diamond Powder, Glutathione, Papaya Extract, Raw Honey.",
+    usage: "Lather soap and apply to the body. Allow to sit on skin for 1-2 minutes before rinsing. Use once or twice daily."
+  },
+  {
+    id: 9,
+    name: "Body Scrub",
+    subtitle: "Exfoliate & Smooth",
+    price: 200.00,
+    category: "body",
+    packageType: "jar",
+    desc: "A sensory body exfoliant that sweeps away dead cells, boosts micro-circulation, and primes skin to absorb lotions.",
+    ingredients: "Fine Cane Sugar, Sea Salt, Unique Diamond Powder, Sweet Almond Oil, Northern Shea Butter, Vitamin E.",
+    usage: "Massage in circular motions onto wet skin during your bath or shower. Rinse thoroughly. Use 2 times a week."
+  },
+  {
+    id: 10,
+    name: "Glow Oil",
+    subtitle: "Nourish & Shimmer",
+    price: 150.00,
+    category: "body",
+    packageType: "bottle",
+    desc: "A luxurious lightweight body oil that absorbs instantly, sealing in hydration and leaving a soft, glistening golden sheen.",
+    ingredients: "Caprylic/Capric Triglyceride, Jojoba Oil, Unique Diamond Dust, Golden Mica, Argan Oil, Fragrance.",
+    usage: "Shake well to disperse micas. Massage a few drops onto damp or dry skin for an instant, healthy glow."
+  },
+  {
+    id: 11,
+    name: "Body Butter",
+    subtitle: "Nourish & Cocoon",
+    price: 200.00,
+    category: "body",
+    packageType: "jar",
+    desc: "An ultra-rich, decadent body butter crafted with organic Northern Shea and Cocoa Butter to deeply nourish dry, parched skin.",
+    ingredients: "Butyrospermum Parkii (Shea Butter), Theobroma Cacao (Cocoa) Butter, Unique Diamond Powder, Coconut Oil, Almond Oil.",
+    usage: "Warm a scoop between palms and press into skin. Highly recommended right after showering to lock in moisture."
+  },
+  {
+    id: 12,
+    name: "Sunscreen",
+    subtitle: "Protect & Shield",
+    price: 400.00,
+    category: "face",
+    packageType: "tube",
+    desc: "Broad-spectrum SPF 50 sunscreen to shield the skin from UV damage, prevent sunspots, and preserve cellular radiance.",
+    ingredients: "Water, Zinc Oxide, Titanium Dioxide, Unique Diamond Powder, Moringa Extract, Green Tea Extract, Glycerin.",
+    usage: "Apply generously to face and exposed skin 15 minutes before sun exposure. Reapply every 2 hours if outdoors."
+  },
+  {
+    id: 13,
+    name: "Acne Face Soap",
+    subtitle: "Clear & Purify",
+    price: 150.00,
+    category: "face",
+    packageType: "soap",
+    desc: "A specialized facial soap infused with active botanical extracts to regulate sebum, clear breakouts, and heal blemishes.",
+    ingredients: "Water, Sodium Cocoate, Salicylic Acid, Tea Tree Oil, Unique Diamond Powder, Sulfur, Activated Charcoal.",
+    usage: "Lather and massage onto acne-prone areas. Let sit for 30 seconds, then rinse with cool water. Use twice daily."
+  },
+  {
+    id: 14,
+    name: "Knuckle Oil",
+    subtitle: "Targeted Brightening",
+    price: 150.00,
+    category: "targeted",
+    packageType: "bottle",
+    desc: "A highly targeted corrective oil formulated to lighten stubborn dark knuckles, elbows, knees, and toes.",
+    ingredients: "Rosehip Seed Oil, Licorice Extract, Alpha Arbutin, Unique Diamond Powder, Vitamin C, Lemon Peel Oil.",
+    usage: "Apply 1-2 drops directly onto dark knuckles or affected joints twice daily. Massage gently until absorbed."
+  },
+  {
+    id: 15,
+    name: "Stretch Marks Oil",
+    subtitle: "Repair & Smooth",
+    price: 170.00,
+    category: "targeted",
+    packageType: "bottle",
+    desc: "A firming treatment oil designed to fade existing stretch marks and increase skin elasticity to prevent future ones.",
+    ingredients: "Gotu Kola Extract, Sweet Almond Oil, Rosehip Oil, Unique Diamond Peptide Complex, Tocopherol, Centella Asiatica.",
+    usage: "Massage generously onto stretch marks or target body parts twice daily."
   }
 ];
 
@@ -88,6 +220,155 @@ const quizAnswers = {
   3: null  // environment
 };
 
+/* --- Dynamic Packaging HTML Generators --- */
+function getPackageHTML(type, name) {
+  const brandInitials = "UD";
+  if (type === 'bottle') {
+    return `
+      <div class="package-wrapper">
+        <div class="bottle-tip"></div>
+        <div class="bottle-neck"></div>
+        <div class="bottle-body">
+          <div class="bottle-pipette"></div>
+          <div class="bottle-liquid"></div>
+          <div class="package-label">
+            <div class="package-label-diamond"></div>
+            <span class="package-label-logo">${brandInitials}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (type === 'jar') {
+    return `
+      <div class="package-wrapper">
+        <div class="jar-lid"></div>
+        <div class="jar-body">
+          <div class="package-label">
+            <div class="package-label-diamond"></div>
+            <span class="package-label-logo">${brandInitials}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (type === 'pump') {
+    return `
+      <div class="package-wrapper">
+        <div class="pump-head">
+          <div class="pump-nozzle"></div>
+        </div>
+        <div class="pump-collar"></div>
+        <div class="pump-body">
+          <div class="pump-straw"></div>
+          <div class="package-label">
+            <div class="package-label-diamond"></div>
+            <span class="package-label-logo">${brandInitials}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (type === 'soap') {
+    const isSuper = name.toLowerCase().includes('super');
+    return `
+      <div class="package-wrapper">
+        <div class="soap-bar ${isSuper ? 'super-soap' : ''}">
+          <div class="soap-band">
+            <div class="package-label-diamond" style="margin-bottom:2px;"></div>
+            <span class="soap-band-logo">${brandInitials}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (type === 'tube') {
+    return `
+      <div class="package-wrapper">
+        <div class="tube-crimp"></div>
+        <div class="tube-body">
+          <div class="tube-body-inner">
+            <div class="package-label">
+              <div class="package-label-diamond"></div>
+              <span class="package-label-logo">${brandInitials}</span>
+            </div>
+          </div>
+        </div>
+        <div class="tube-cap"></div>
+      </div>
+    `;
+  }
+  return '';
+}
+
+function getMiniPackageHTML(type, name) {
+  return `
+    <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; transform: scale(0.6); background: linear-gradient(135deg, #fefbfc 0%, #f6ebe9 100%); border-radius: 4px; border: 1px solid var(--border-color); overflow: hidden; margin-right: 5px;">
+      ${getPackageHTML(type, name)}
+    </div>
+  `;
+}
+
+/* --- Render Product Catalog --- */
+const productGrid = document.getElementById('product-grid');
+let activeFilter = 'all';
+
+function renderCatalog() {
+  productGrid.innerHTML = '';
+  
+  const filteredProducts = products.filter(p => {
+    if (activeFilter === 'all') return true;
+    return p.category === activeFilter;
+  });
+  
+  filteredProducts.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card glass-panel';
+    card.setAttribute('data-id', product.id);
+    
+    // Select Step prefix dynamically based on category
+    let stepPrefix = "Step";
+    if (product.category === 'face') stepPrefix = "Face Care";
+    else if (product.category === 'body') stepPrefix = "Body Care";
+    else if (product.category === 'targeted') stepPrefix = "Targeted";
+    
+    card.innerHTML = `
+      <span class="product-badge">${stepPrefix}</span>
+      <div class="product-image-container">
+        ${getPackageHTML(product.packageType, product.name)}
+      </div>
+      <div class="product-card-details">
+        <h3 class="product-card-title">${product.name}</h3>
+        <span class="product-card-subtitle">${product.subtitle}</span>
+        <p>${product.desc}</p>
+        <div class="product-card-price-row">
+          <span class="product-card-price">GH₵ ${product.price.toFixed(2)}</span>
+          <div class="product-actions">
+            <button class="btn-icon-only quickview-btn" data-id="${product.id}" aria-label="Quick View">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+            </button>
+            <button class="btn-icon-only add-to-cart-btn" data-id="${product.id}" aria-label="Add to Cart">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    productGrid.appendChild(card);
+  });
+}
+
+// Category filter click handler
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.getAttribute('data-filter');
+    renderCatalog();
+  });
+});
+
 /* --- Cart Functionality --- */
 function updateCartUI() {
   cartItemsList.innerHTML = '';
@@ -113,7 +394,7 @@ function updateCartUI() {
     const itemEl = document.createElement('div');
     itemEl.className = 'cart-item';
     itemEl.innerHTML = `
-      <img src="${item.product.image}" alt="${item.product.name}" class="cart-item-img">
+      ${getMiniPackageHTML(item.product.packageType, item.product.name)}
       <div class="cart-item-info">
         <div>
           <h4 class="cart-item-title">${item.product.name}</h4>
@@ -135,14 +416,13 @@ function updateCartUI() {
   cartBadgeCount.textContent = totalItems;
   cartSubtotal.textContent = `GH₵ ${subtotalVal.toFixed(2)}`;
   
-  // Check if all 3 products are in cart to apply the bundle discount
-  const hasCleanser = cart.some(item => item.product.id === 1);
-  const hasSerum = cart.some(item => item.product.id === 2);
-  const hasMoisturizer = cart.some(item => item.product.id === 3);
+  // Apply a 15% discount if they buy a 3-step routine (Face Soap/Cleanser, Face Serum, Face Cream)
+  const hasCleanser = cart.some(item => item.product.id === 1 || item.product.id === 3);
+  const hasSerum = cart.some(item => item.product.id === 5);
+  const hasCream = cart.some(item => item.product.id === 2);
   
   let discountVal = 0;
-  if (hasCleanser && hasSerum && hasMoisturizer) {
-    // 15% discount on the entire cart subtotal
+  if (hasCleanser && hasSerum && hasCream) {
     discountVal = subtotalVal * 0.15;
     cartDiscountRow.style.display = 'flex';
     cartDiscount.textContent = `-GH₵ ${discountVal.toFixed(2)}`;
@@ -210,7 +490,7 @@ cartItemsList.addEventListener('click', (e) => {
   }
 });
 
-// Catalog Add to Cart button listeners
+// Add to Cart Catalog Trigger
 document.addEventListener('click', (e) => {
   const addToCartBtn = e.target.closest('.add-to-cart-btn');
   if (addToCartBtn) {
@@ -219,7 +499,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Checkout Action
+// Checkout action
 checkoutBtn.addEventListener('click', () => {
   closeCart();
   cart = [];
@@ -242,10 +522,12 @@ function openQuickview(productId) {
   quickviewModalBody.innerHTML = `
     <div class="quickview-layout">
       <div class="quickview-img-col">
-        <img src="${product.image}" alt="${product.name}" class="quickview-img">
+        <div class="quickview-img-placeholder" style="padding: 2rem;">
+          ${getPackageHTML(product.packageType, product.name)}
+        </div>
       </div>
       <div class="quickview-info-col">
-        <span class="quickview-tag">${product.tag}</span>
+        <span class="quickview-tag">${product.tag || 'Unique Diamond Glow'}</span>
         <h2 class="quickview-title">${product.name}</h2>
         <span class="quickview-price">GH₵ ${product.price.toFixed(2)}</span>
         <p class="quickview-desc">${product.desc}</p>
@@ -266,7 +548,6 @@ function openQuickview(productId) {
   
   quickviewModal.classList.add('active');
   
-  // Tab change handler inside modal
   const tabs = quickviewModalBody.querySelectorAll('.quickview-tab-btn');
   const tabContent = quickviewModalBody.querySelector('#quickview-tab-content');
   
@@ -283,7 +564,6 @@ function openQuickview(productId) {
     });
   });
   
-  // Add to cart from quick view
   const quickviewAddBtn = quickviewModalBody.querySelector('#quickview-add-btn');
   quickviewAddBtn.addEventListener('click', () => {
     addToCart(product.id);
@@ -422,22 +702,33 @@ function renderQuizResults() {
   let routineDesc = "A comprehensive 3-step cellular repair system designed to refresh, feed, and shield skin cells.";
   let highlightText = "Perfect for balanced and combination skin types.";
   
+  // Select products for recommendation
+  let cleanserItem = products.find(p => p.id === 3); // Face Cleanser
+  let serumItem = products.find(p => p.id === 5); // Face Serum
+  let creamItem = products.find(p => p.id === 2); // Face Cream
+  
   if (skinType === 'dry' || concern === 'dehydration' || env === 'cold-dry') {
     routineName = "Deep Moisture Glow Ritual";
     routineDesc = "A moisture-capturing formulation sequence focused on locking barrier lipids and pulling hydration layers into tight skin cells.";
     highlightText = "Highly effective during the dry Harmattan season to restore rich barrier cocooning.";
+    // Use Face Soap (90) + Serum (200) + Cream (180)
+    cleanserItem = products.find(p => p.id === 1);
   } else if (skinType === 'oily' || concern === 'dullness' || env === 'urban') {
     routineName = "Diamond Pore-Refine Ritual";
     routineDesc = "A targeted polishing routine engineered to sweep away micro-impurities, sweat, and sebum oxidation, revealing clear light reflection.";
     highlightText = "Calibrated for oily skin in humid urban environments like Accra.";
+    // Use Face Cleanser (165) + Serum (200) + Cream (180)
+    cleanserItem = products.find(p => p.id === 3);
   } else if (skinType === 'sensitive' || concern === 'redness') {
     routineName = "Calming Glow Ritual";
     routineDesc = "A highly soothing, anti-inflammatory sequence designed to calm cell irritation and build resilience in compromised skin barriers.";
     highlightText = "Dermatologist-validated recommendation for sensitive skin.";
+    // Use Soap (90) + Serum (200) + Cream (180)
+    cleanserItem = products.find(p => p.id === 1);
   }
 
-  // Calculate discounted price
-  const originalSubtotal = products.reduce((acc, p) => acc + p.price, 0);
+  const recList = [cleanserItem, serumItem, creamItem];
+  const originalSubtotal = recList.reduce((acc, p) => acc + p.price, 0);
   const discountedTotal = originalSubtotal * 0.85; // 15% discount
   
   quizResultNode.innerHTML = `
@@ -449,9 +740,11 @@ function renderQuizResults() {
     </p>
     
     <div class="quiz-recs">
-      ${products.map(p => `
+      ${recList.map(p => `
         <div class="rec-item">
-          <img src="${p.image}" alt="${p.name}" class="rec-img">
+          <div class="rec-img-placeholder">
+            ${getPackageHTML(p.packageType, p.name)}
+          </div>
           <div class="rec-details">
             <h4>${p.name}</h4>
             <p style="font-size: 0.85rem;">${p.subtitle} &bull; GH₵ ${p.price.toFixed(2)}</p>
@@ -475,7 +768,6 @@ function renderQuizResults() {
     </div>
   `;
 
-  // Attach event handlers inside quiz results screen
   document.getElementById('quiz-reset-btn').addEventListener('click', () => {
     currentQuizStep = 1;
     quizAnswers[1] = null;
@@ -487,7 +779,7 @@ function renderQuizResults() {
   });
 
   document.getElementById('quiz-buy-bundle-btn').addEventListener('click', () => {
-    products.forEach(p => {
+    recList.forEach(p => {
       const existing = cart.find(item => item.product.id === p.id);
       if (!existing) {
         cart.push({ product: p, quantity: 1 });
@@ -499,7 +791,7 @@ function renderQuizResults() {
   });
 }
 
-// Next/Prev Buttons
+// Quiz Next/Prev Buttons
 quizNextBtn.addEventListener('click', () => {
   if (currentQuizStep < 4 && quizAnswers[currentQuizStep]) {
     currentQuizStep += 1;
@@ -537,7 +829,7 @@ function resetBookingForm() {
   bookingModalBody.innerHTML = `
     <span class="section-tag">Expert Analysis</span>
     <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Book Virtual Skin Consultation</h2>
-    <p style="margin-bottom: 2rem;">Spend 15 minutes with a Diamond Glow specialist. Receive custom routine adjustments and recommendations.</p>
+    <p style="margin-bottom: 2rem;">Spend 15 minutes with a Unique Diamond Glow Cosmetics specialist. Receive custom routine adjustments and recommendations.</p>
     
     <form class="booking-form" id="booking-form">
       <div class="form-group">
@@ -594,7 +886,7 @@ function handleBookingSubmit(e) {
       <p style="margin-bottom: 2rem; max-width: 450px; margin-left: auto; margin-right: auto;">
         Thank you, <strong>${name}</strong>. Your virtual skin analysis is scheduled for <strong>${date}</strong> at <strong>${time} GMT</strong>. An email calendar invite and video link has been sent to you.
       </p>
-      <button class="btn btn-primary" id="booking-success-close-btn" style="width: 100%;">Return to Diamond Glow</button>
+      <button class="btn btn-primary" id="booking-success-close-btn" style="width: 100%;">Return to Shop</button>
     </div>
   `;
   
@@ -649,7 +941,7 @@ newsletterForm.addEventListener('submit', (e) => {
   parent.innerHTML = `
     <h4>Join the Ritual</h4>
     <p style="color: var(--gold); font-weight: 500; margin-top: 1rem; animation: fadeIn 0.5s ease;">
-      Thank you for subscribing. The Diamond Glow newsletter will now be delivered to <strong>${email}</strong>.
+      Thank you for subscribing. The Unique Diamond Glow newsletter will now be delivered to <strong>${email}</strong>.
     </p>
   `;
 });
@@ -672,6 +964,7 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-// Initialize cart UI state
+// Initial catalog rendering and UI triggers
+renderCatalog();
 updateCartUI();
 updateQuizUI();

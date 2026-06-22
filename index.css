@@ -1,25 +1,25 @@
 /*
- * Diamond Glow Skincare - Premium Design System (Ghanaian Light Edition)
- * Aesthetics: Warm Luxury Light Mode, Ivory & Soft Gold, Minty/Cyan Highlight Glow
+ * Unique Diamond Glow Cosmetics - Premium Design System
+ * Theme: Luxury Blush Pink, Rose Gold & Espresso Charcoal
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  --bg-color: #faf8f5;
-  --bg-card: rgba(255, 255, 255, 0.7);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --border-color: rgba(28, 26, 23, 0.08);
-  --border-hover: rgba(197, 160, 89, 0.4);
+  --bg-color: #fdfaf9;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --border-color: rgba(183, 110, 121, 0.12);
+  --border-hover: rgba(183, 110, 121, 0.35);
   
-  --text-primary: #1c1a17;
-  --text-secondary: #59554f;
-  --text-muted: #8c857b;
+  --text-primary: #2d1f1d;
+  --text-secondary: #6e5e5c;
+  --text-muted: #9c8e8c;
   
-  --gold: #c5a059;
-  --gold-light: #d8be8a;
-  --gold-glow: rgba(197, 160, 89, 0.12);
-  --cyan-glow: rgba(0, 131, 143, 0.06);
+  --gold: #b76e79; /* Metallic Rose Gold */
+  --gold-light: #e5c0ba; /* Champagne Pink */
+  --gold-glow: rgba(183, 110, 121, 0.12);
+  --cyan-glow: rgba(183, 110, 121, 0.05);
   
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -49,7 +49,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background: radial-gradient(circle at 10% 20%, #fdfcf9 0%, #f5f2eb 90.2%);
+  background: radial-gradient(circle at 10% 20%, #fefcfb 0%, #f7ece9 90.2%);
 }
 
 /* Custom Scrollbar */
@@ -60,7 +60,7 @@ body {
   background: var(--bg-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(183, 110, 121, 0.15);
   border-radius: var(--radius-sm);
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -106,13 +106,13 @@ a {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: #faf8f5;
+  color: #ffffff;
   box-shadow: 0 4px 20px var(--gold-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(197, 160, 89, 0.35);
+  box-shadow: 0 6px 25px rgba(183, 110, 121, 0.35);
 }
 
 .btn-secondary {
@@ -122,7 +122,7 @@ a {
 }
 
 .btn-secondary:hover {
-  background: rgba(197, 160, 89, 0.05);
+  background: rgba(183, 110, 121, 0.05);
   transform: translateY(-2px);
 }
 
@@ -172,12 +172,12 @@ a {
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 80px;
+  height: 90px;
   padding: 0 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(250, 248, 245, 0.8);
+  background: rgba(253, 250, 249, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -185,28 +185,29 @@ a {
 }
 
 .navbar.scrolled {
-  height: 70px;
-  background: rgba(250, 248, 245, 0.95);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  height: 75px;
+  background: rgba(253, 250, 249, 0.96);
+  box-shadow: 0 4px 30px rgba(183, 110, 121, 0.04);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--text-primary);
 }
 
-.logo-diamond {
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  transform: rotate(45deg);
-  box-shadow: 0 0 10px var(--gold-light);
+.logo-img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 2px 10px var(--gold-glow);
 }
 
 .nav-links {
@@ -248,7 +249,7 @@ a {
 }
 
 .cart-icon:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(183, 110, 121, 0.05);
   color: var(--gold);
 }
 
@@ -262,7 +263,7 @@ a {
   top: -2px;
   right: -2px;
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: #faf8f5;
+  color: #ffffff;
   font-size: 0.75rem;
   font-weight: 600;
   width: 18px;
@@ -271,7 +272,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(183, 110, 121, 0.2);
 }
 
 /* Sections General */
@@ -312,7 +313,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 110px;
   position: relative;
   overflow: hidden;
 }
@@ -396,7 +397,7 @@ section {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(0, 188, 212, 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(183, 110, 121, 0.1) 0%, transparent 60%);
   z-index: -1;
   animation: pulse-glow 6s infinite ease-in-out;
 }
@@ -407,12 +408,12 @@ section {
   border-radius: var(--radius-lg);
   object-fit: cover;
   animation: float 6s infinite ease-in-out;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 15px 35px rgba(183, 110, 121, 0.15));
 }
 
 /* Philosophy Section */
 .philosophy {
-  background: rgba(245, 242, 235, 0.4);
+  background: rgba(247, 236, 233, 0.4);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -431,7 +432,7 @@ section {
 .philosophy-card:hover {
   transform: translateY(-5px);
   border-color: var(--border-hover);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(183, 110, 121, 0.02);
 }
 
 .phil-icon {
@@ -439,7 +440,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(197, 160, 89, 0.08);
+  background: rgba(183, 110, 121, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,7 +473,7 @@ section {
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--border-color);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 40px rgba(183, 110, 121, 0.08);
   user-select: none;
 }
 
@@ -493,7 +494,7 @@ section {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(183, 110, 121, 0.2);
 }
 
 .slider-after-container .slider-image {
@@ -534,7 +535,7 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--gold);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05), 0 0 10px var(--gold-glow);
+  box-shadow: 0 0 15px rgba(183, 110, 121, 0.05), 0 0 10px var(--gold-glow);
   font-size: 0.8rem;
   transition: transform 0.1s ease;
 }
@@ -547,7 +548,7 @@ section {
   position: absolute;
   bottom: 20px;
   padding: 5px 15px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(5px);
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
@@ -566,7 +567,37 @@ section {
   left: 20px;
 }
 
-/* Product Catalog */
+/* Category Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #ffffff;
+  box-shadow: 0 4px 15px var(--gold-glow);
+}
+
+/* Product Catalog Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -584,17 +615,18 @@ section {
 .product-card:hover {
   transform: translateY(-8px);
   border-color: var(--border-hover);
-  box-shadow: 0 12px 35px rgba(197, 160, 89, 0.08);
+  box-shadow: 0 12px 35px rgba(183, 110, 121, 0.08);
 }
 
 .product-badge {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  background: rgba(197, 160, 89, 0.08);
-  border: 1px solid var(--gold);
+  background: rgba(183, 110, 121, 0.06);
+  border: 1.5px solid var(--gold);
   color: var(--gold);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 500;
   padding: 4px 12px;
   border-radius: var(--radius-sm);
   z-index: 5;
@@ -607,23 +639,276 @@ section {
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.01);
+  background: linear-gradient(135deg, #fefbfc 0%, #f6ebe9 100%);
   margin-bottom: 1.5rem;
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-card-img {
-  width: 100%;
+/* --- Premium CSS Packaging Visuals --- */
+
+/* Base container for 3D packaging */
+.package-wrapper {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 10px 15px rgba(183, 110, 121, 0.15));
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Label style for all packagings */
+.package-label {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(183, 110, 121, 0.18);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  text-align: center;
+  padding: 2px;
+}
+.package-label-logo {
+  font-family: var(--font-serif);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+}
+.package-label-diamond {
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+/* 1. Dropper Bottle */
+.bottle-tip {
+  width: 16px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 6px 6px 1px 1px;
+  border: 1px solid rgba(183, 110, 121, 0.1);
+  box-shadow: inset -3px 0 5px rgba(0,0,0,0.02);
+}
+.bottle-neck {
+  width: 24px;
+  height: 10px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  border-radius: 1px;
+}
+.bottle-body {
+  width: 56px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(229, 192, 186, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: relative;
+  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(0,0,0,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottle-liquid {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: 70%;
+  background: linear-gradient(to top, rgba(183, 110, 121, 0.25) 0%, rgba(229, 192, 186, 0.15) 100%);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.bottle-pipette {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 75%;
+  background: rgba(255,255,255,0.6);
+  border-radius: 1px;
+}
+.bottle-body .package-label {
+  width: 42px;
+  height: 34px;
+  z-index: 2;
+}
+
+/* 2. Cosmetic Jar */
+.jar-lid {
+  width: 72px;
+  height: 16px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  border-radius: 6px 6px 2px 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.jar-body {
+  width: 70px;
+  height: 52px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(229, 192, 186, 0.45) 100%);
+  border: 1px solid rgba(255,255,255,0.8);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(0,0,0,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 1px;
+}
+.jar-body .package-label {
+  width: 52px;
+  height: 26px;
+}
+
+/* 3. Pump Bottle */
+.pump-head {
+  width: 24px;
+  height: 18px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  border-radius: 6px 2px 2px 2px;
+  position: relative;
+}
+.pump-nozzle {
+  position: absolute;
+  top: 3px;
+  right: -8px;
+  width: 10px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 1px 3px 3px 1px;
+}
+.pump-collar {
+  width: 20px;
+  height: 8px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  margin-top: 1px;
+}
+.pump-body {
+  width: 48px;
+  height: 96px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(229, 192, 186, 0.4) 100%);
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 8px 8px 12px 12px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(0,0,0,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.pump-straw {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 90%;
+  background: rgba(255,255,255,0.4);
+}
+.pump-body .package-label {
+  width: 36px;
+  height: 44px;
+}
+
+/* 4. Luxury Soap Bar */
+.soap-bar {
+  width: 76px;
+  height: 52px;
+  background: linear-gradient(135deg, #fbdad5 0%, #f7ece9 100%);
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 5px rgba(255,255,255,0.9), 0 4px 10px rgba(183, 110, 121, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1.5px solid rgba(183, 110, 121, 0.1);
+}
+.soap-bar.super-soap {
+  background: linear-gradient(135deg, #e5c0ba 0%, #b76e79 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.soap-band {
+  width: 38px;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+  border-left: 1px dashed var(--gold);
+  border-right: 1px dashed var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+.soap-band-logo {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
 }
 
-.product-card:hover .product-card-img {
-  transform: scale(1.08);
+/* 5. Tapered Squeeze Tube */
+.tube-crimp {
+  width: 52px;
+  height: 6px;
+  background: #eae1de;
+  border-radius: 1px 1px 0 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.tube-body {
+  width: 50px;
+  height: 74px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, rgba(229, 192, 186, 0.5) 100%);
+  border-left: 1px solid rgba(255,255,255,0.8);
+  border-right: 1px solid rgba(255,255,255,0.8);
+  clip-path: polygon(10% 100%, 90% 100%, 100% 0%, 0% 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tube-body-inner {
+  position: absolute;
+  width: 50px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tube-body-inner .package-label {
+  width: 34px;
+  height: 32px;
+  margin-top: -10px;
+}
+.tube-cap {
+  width: 32px;
+  height: 12px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  border-radius: 1px 1px 3px 3px;
+  margin-top: -1px;
 }
 
+/* Catalog Card styling */
 .product-card-details {
   display: flex;
   flex-direction: column;
@@ -649,7 +934,7 @@ section {
   align-items: center;
   margin-top: auto;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(183, 110, 121, 0.08);
 }
 
 .product-card-price {
@@ -679,13 +964,13 @@ section {
 
 .btn-icon-only:hover {
   background: var(--gold);
-  color: #faf8f5;
+  color: #ffffff;
   border-color: var(--gold);
 }
 
 /* Skincare Quiz Section */
 .quiz-section {
-  background: rgba(245, 242, 235, 0.3);
+  background: rgba(247, 236, 233, 0.3);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -755,7 +1040,7 @@ section {
 }
 
 .quiz-option.selected {
-  background: rgba(197, 160, 89, 0.05);
+  background: rgba(183, 110, 121, 0.05);
   border-color: var(--gold);
   box-shadow: 0 0 15px var(--gold-glow);
 }
@@ -822,11 +1107,15 @@ section {
   border: 1px solid var(--border-color);
 }
 
-.rec-img {
+.rec-img-placeholder {
   width: 60px;
   height: 60px;
   border-radius: var(--radius-sm);
-  object-fit: cover;
+  background: linear-gradient(135deg, #fefbfc 0%, #f6ebe9 100%);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rec-details h4 {
@@ -840,7 +1129,7 @@ section {
 }
 
 .quiz-bundle-box {
-  background: linear-gradient(135deg, rgba(197, 160, 89, 0.08) 0%, rgba(0, 131, 143, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(183, 110, 121, 0.08) 0%, rgba(183, 110, 121, 0.02) 100%);
   border: 1px dashed var(--gold);
   padding: 1.5rem;
   border-radius: var(--radius-sm);
@@ -882,7 +1171,7 @@ section {
 
 .review-card:hover {
   border-color: var(--border-hover);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(183, 110, 121, 0.03);
 }
 
 .review-stars {
@@ -916,7 +1205,7 @@ section {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(197, 160, 89, 0.05);
+  background: rgba(183, 110, 121, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -941,7 +1230,7 @@ section {
 /* Footer & Newsletter */
 .footer {
   border-top: 1px solid var(--border-color);
-  background: #f4f1ea;
+  background: #fdf3f0;
   padding: 6rem 8% 2rem 8%;
 }
 
@@ -955,6 +1244,9 @@ section {
 .footer-brand h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-brand p {
@@ -998,7 +1290,7 @@ section {
 
 .newsletter-input {
   flex: 1;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   border: 1px solid var(--border-color);
   padding: 0.8rem 1.2rem;
   color: var(--text-primary);
@@ -1014,7 +1306,7 @@ section {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(183, 110, 121, 0.08);
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -1030,7 +1322,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(45, 31, 29, 0.35);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 2000;
@@ -1055,7 +1347,7 @@ section {
   padding: 3rem;
   background: #ffffff;
   border: 1px solid var(--border-color);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(183, 110, 121, 0.08);
   animation: modalIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1097,7 +1389,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(45, 31, 29, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 1500;
@@ -1118,7 +1410,7 @@ section {
   width: 100%;
   max-width: 450px;
   height: 100vh;
-  background: #faf8f5;
+  background: #fdfaf9;
   border-left: 1px solid var(--border-color);
   z-index: 1600;
   transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1182,12 +1474,15 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.cart-item-img {
+.cart-item-img-placeholder {
   width: 80px;
   height: 80px;
   border-radius: var(--radius-sm);
-  object-fit: cover;
+  background: linear-gradient(135deg, #fefbfc 0%, #f6ebe9 100%);
   border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-item-info {
@@ -1260,7 +1555,7 @@ section {
 .cart-drawer-footer {
   padding: 2rem;
   border-top: 1px solid var(--border-color);
-  background: rgba(245, 242, 235, 0.8);
+  background: rgba(247, 236, 233, 0.8);
 }
 
 .cart-summary-row {
@@ -1333,8 +1628,8 @@ textarea.form-input {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(0, 131, 143, 0.1);
-  color: #00838f;
+  background: rgba(183, 110, 121, 0.1);
+  color: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1351,12 +1646,15 @@ textarea.form-input {
   flex: 1;
 }
 
-.quickview-img {
+.quickview-img-placeholder {
   width: 100%;
   aspect-ratio: 1/1;
-  object-fit: cover;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, #fefbfc 0%, #f6ebe9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quickview-info-col {
@@ -1423,14 +1721,14 @@ textarea.form-input {
 /* Keyframe Animations */
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
   100% { transform: translateY(0px); }
 }
 
 @keyframes pulse-glow {
-  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
-  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
-  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
+  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
+  50% { opacity: 0.75; transform: translate(-50%, -50%) scale(1.05); }
+  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
 }
 
 @keyframes fadeIn {
@@ -1455,7 +1753,7 @@ textarea.form-input {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 150px;
     gap: 3rem;
   }
   .hero-content {
